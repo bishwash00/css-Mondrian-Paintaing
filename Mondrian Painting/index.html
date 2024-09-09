@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Paintaing</title>
+    <style>
+            /* Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E */
+    .flex-container{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+        .grid-container{
+            height: 748px;
+            width: 748px;
+            background-color: #000;
+            display: grid;
+            grid-template-rows: 414px 131px 155px 21px;
+            grid-template-columns: 320px 198px 153px 50px;
+            gap: 9px;
+        }
+        .grid-item-1{
+            background-color: #E72F24;
+            }
+        .grid-item-2{
+            grid-column-start: 2;
+            grid-column-end: -1;
+            background-color: #F0F1EC;
+        }
+        .grid-item-3{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: #F0F1EC;
+        }
+        .grid-item-4{
+            grid-area: 2 / 2 / 4 / 4;
+            background-color: #F0F1EC;
+        }
+        .grid-item-5{
+            background-color: #004592;
+            border-bottom: #000 solid 10px;
+        }
+        .grid-item-6{
+            background-color: #F0F1EC;
+            grid-row-start: 3;
+            grid-row-end: -1;
+        }
+        .grid-item-7{
+            background-color: #F0F1EC;
+        }
+        .grid-item-8{
+            background-color: #F9D01E;
+        }
+        .grid-item-9{
+            background-color: #232629;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="grid-container">
+            <div class="grid-item-1"></div>
+            <div class="grid-item-2"></div>
+            <div class="grid-item-3"></div>
+            <div class="grid-item-4"></div>
+            <div class="grid-item-5"></div>
+            <div class="grid-item-6"></div>
+            <div class="grid-item-7"></div>
+            <div class="grid-item-8"></div>
+            <div class="grid-item-9"></div>
+        </div>
+    </div>
+</body>
+</html>
